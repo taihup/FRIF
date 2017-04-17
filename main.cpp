@@ -122,5 +122,10 @@ int main(int argc, char* argv[])
 
 	}
 
+    cv::Mat outImage;
+    cv::drawKeypoints(img, kpts, outImage);
+    cv::imshow("FRIF Keypoints",outImage);
+    cv::waitKey(0);
+
 	return 0;
 }
